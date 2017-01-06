@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>博客站点建设历程 | lin_sun</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="前言本篇日志用于归纳记录自己在学习建设个人博客站点中的各种尝试和思考。为方便编辑和查看最新进展，更新以倒序方式呈现。
+
+大部分改动最终会同步到 [midnight]主题中，希望主题用户能偶尔查看此日志，按需决定是否更新。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="博客站点建设历程">
+<meta property="og:url" content="/blog-building/index.html">
+<meta property="og:site_name" content="lin_sun">
+<meta property="og:description" content="前言本篇日志用于归纳记录自己在学习建设个人博客站点中的各种尝试和思考。为方便编辑和查看最新进展，更新以倒序方式呈现。
+
+大部分改动最终会同步到 [midnight]主题中，希望主题用户能偶尔查看此日志，按需决定是否更新。">
+<meta property="og:updated_time" content="2016-06-26T13:58:09.385Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="博客站点建设历程">
+<meta name="twitter:description" content="前言本篇日志用于归纳记录自己在学习建设个人博客站点中的各种尝试和思考。为方便编辑和查看最新进展，更新以倒序方式呈现。
+
+大部分改动最终会同步到 [midnight]主题中，希望主题用户能偶尔查看此日志，按需决定是否更新。">
+  
+    <link rel="alternative" href="/atom.xml" title="lin_sun" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+	
+      <link rel="stylesheet" href="/search/share.css">
+  
+
+
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: false,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/">lin_sun</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">Think tall, gotta smile, and have fun!</p>
+        
+        
+        	<!--<form>
+                <input type="text" class="st-default-search-input search" id="search" placeholder=" Search..." autocomplete="off" autocorrect="off" autocapitalize="off">
+            </form>-->
+            <form id="search-form"> <!--搜索框相关-->
+    			<input type="text" id="local-search-input" name="q" results="0" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off"/>
+    			<i class="fa fa-times" onclick="resetSearch()"></i> <!--清空/重置搜索框-->
+			</form>
+			<div id="local-search-result"></div> <!--搜索结果区-->
+  			
+			<p class="no-result" style="display: none;">No results found <i class="fa fa-spinner fa-pulse"></i></p> <!--无匹配时显示，注意请在 CSS 中设置默认隐藏  -->
+			
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/archives">所有文章</a></li>
+                        
+                            <li><a href="/tags">标签云</a></li>
+                        
+                            <li><a href="/about">留言板</a></li>
+                        
+                            <li><a href="/blog-building">建站日志</a></li>
+                        
+                            <li><a href="/admin">管理面板</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl weibo" target="_blank" href="http://weibo.com/u/1625037405" title="weibo">weibo</a>
+                            
+                                <a class="fl facebook" target="_blank" href="https://zh-cn.facebook.com/people/Will-Lin/100007670703655" title="facebook">facebook</a>
+                            
+                                <a class="fl google" target="_blank" href="https://plus.google.com/105084127046968004179" title="google">google</a>
+                            
+                                <a class="fl mail" target="_blank" href="mailto:lin_sun@live.cn" title="mail">mail</a>
+                            
+                                <a class="fl rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/Latex/" style="font-size: 10px;">Latex</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a>
+                    </div>
+                </section>
+                
+                
+                
+
+                
+                
+                <section class="switch-part switch-part3">
+                
+                    <div id="js-aboutme">爱搞机、爱折腾、爱打码，小小程序猿刚下海，还请老攻城狮机们慷慨带路！</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">lin_sun</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">lin_sun</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">Think tall, gotta smile, and have fun!</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/archives">所有文章</a></li>
+                
+                    <li><a href="/tags">标签云</a></li>
+                
+                    <li><a href="/about">留言板</a></li>
+                
+                    <li><a href="/blog-building">建站日志</a></li>
+                
+                    <li><a href="/admin">管理面板</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="weibo" target="_blank" href="http://weibo.com/u/1625037405" title="weibo">weibo</a>
+                    
+                        <a class="facebook" target="_blank" href="https://zh-cn.facebook.com/people/Will-Lin/100007670703655" title="facebook">facebook</a>
+                    
+                        <a class="google" target="_blank" href="https://plus.google.com/105084127046968004179" title="google">google</a>
+                    
+                        <a class="mail" target="_blank" href="mailto:lin_sun@live.cn" title="mail">mail</a>
+                    
+                        <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/blog-building/index.html" class="article-date">
+      <time datetime="2016-06-26T07:37:15.000Z" itemprop="datePublished">2016-06-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      博客站点建设历程
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <style>
+    .article-meta {
+        display: none;
+    }
+    #container .article .article-title {
+        padding-right: 0;
+    }
+    .article-header {
+        padding: 0;
+        padding-top: 26px;
+        border-left: none;
+        text-align: center;
+    }
+    .article-header:hover {
+        border-left: none;
+    }
+    .article-title {
+        font-size: 1.6em
+    }
+    .article-meta {
+        display: none;
+    }
+    .article-entry hr {
+        margin: 0;
+    }
+    #container .article-info-post.article-info {
+      display: none;
+      }
+    #container .article .article-title {
+    padding: 0;
+    }
+</style>
+
+
+          
+        <hr>
+<p></p><h2 id="intro">前言</h2>本篇日志用于归纳记录自己在学习建设个人博客站点中的各种尝试和思考。<br>为方便编辑和查看最新进展，更新以倒序方式呈现。<p></p>
+<blockquote>
+<p>大部分改动最终会同步到 [midnight]主题中，希望主题用户能偶尔查看此日志，按需决定是否更新。</p>
+</blockquote>
+<a id="more"></a>
+<ul>
+<li>改动和尝试中参考的主要资源都做了 <a href="">链接跳转</a> 并在文末列出；    </li>
+<li><a href="">[G]</a>: 表示该项的具体修改已 commit 提交到 <a href="https://github.com/adolph7lin" title="adolph7lin&#39;s GitHub" target="_blank" rel="external">GitHub</a>，点击即可查看；</li>
+</ul>
+<h2 id="2016-年-5-月"><a href="#2016-年-5-月" class="headerlink" title="2016 年 5 月"></a>2016 年 5 月</h2><h3 id="05-25-域名解析和绑定"><a href="#05-25-域名解析和绑定" class="headerlink" title="05-25    域名解析和绑定"></a>05-25    域名解析和绑定</h3><blockquote>
+<ul>
+<li>根据 <a href="https://www.qcloud.com/doc/product/213/2975" title="部署应用环境" target="_blank" rel="external">T腾讯云主机帮助文档</a> 部署主机应用环境；</li>
+<li>用主机商提供的配置信息绑定和解析了域名。</li>
+</ul>
+</blockquote>
+<h3 id="05-23-购买云服务器"><a href="#05-23-购买云服务器" class="headerlink" title="05-23    购买云服务器"></a>05-23    购买云服务器</h3><blockquote>
+<ul>
+<li>在 <a href="https://www.qcloud.com/" target="_blank" rel="external">腾讯云服务器</a> 留意到腾讯云有大学生优惠，所以就有了建自己博客的想法，于是买了域名和主机。</li>
+</ul>
+</blockquote>
+<h3 id="05-17-注册域名"><a href="#05-17-注册域名" class="headerlink" title="05-17    注册域名"></a>05-17    注册域名</h3><blockquote>
+<ul>
+<li>在 <a href="https://domains.qcloud.com/" target="_blank" rel="external">腾讯云域名</a> 使用大学生域名代金券后0元入手，可以免费使用一年</li>
+<li>个人站点 <a href="http://lin-sun.cn/" title="lin_sun&#39;s blog" target="_blank" rel="external">lin-sun.cn</a> 成功注册！</li>
+</ul>
+</blockquote>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<li><strong>lin_sun’s blog</strong>: <a href="http://lin-sun.cn/" target="_blank" rel="external">http://lin-sun.cn/</a></li>
+<li><strong>腾讯云域名</strong>: <a href="https://domains.qcloud.com/" target="_blank" rel="external">https://domains.qcloud.com/</a></li>
+<li><strong>腾讯云服务器</strong>: <a href="https://www.qcloud.com/product/cvm.html" target="_blank" rel="external">https://www.qcloud.com/product/cvm.html</a></li>
+<li><strong><em>Code Reference: the_excerpt ()</em></strong> by <strong>bhlarsen</strong> on <code>2015/06/28</code>: <a href="https://developer.wordpress.org/reference/functions/the_excerpt/" target="_blank" rel="external">https://developer.wordpress.org/reference/functions/the_excerpt/</a></li>
+<li><strong>GitHub Pages</strong>: <a href="https://pages.github.com/" target="_blank" rel="external">https://pages.github.com/</a></li>
+<li><strong><em>Hexo Framework Homepage</em></strong> by <strong>Tommy Chen</strong> on <code>2015</code>: <a href="https://hexo.io/zh-cn/" target="_blank" rel="external">https://hexo.io/zh-cn/</a></li>
+<li><strong><em>使用GitHub搭建静态博客（Hexo）</em></strong> by <strong>钟白兔</strong> on <code>2014/04/07</code>: <a href="http://segmentfault.com/a/1190000000458953" target="_blank" rel="external">http://segmentfault.com/a/1190000000458953</a></li>
+<li><strong><em>使用 GitHub 和 Hexo 搭建免费静态 Blog</em></strong> by <strong>wsgzao</strong> on <code>2015/03/23</code>: <a href="https://www.v2ex.com/t/178642" target="_blank" rel="external">https://www.v2ex.com/t/178642</a></li>
+<li><strong><em>Hexo-Theme-Yilia</em></strong> by <strong>litten</strong> on <code>2015/02/21</code>: <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia</a></li>
+<li><strong>GitHub</strong>: <a href="https://github.com/MOxFIVE" target="_blank" rel="external">https://github.com/MOxFIVE</a></li>
+<li><strong><em>M-Hexo-Blog</em></strong> by <strong>MOxFIVE</strong> on <code>2015</code>: <a href="https://github.com/MOxFIVE/M-Hexo-Blog" target="_blank" rel="external">https://github.com/MOxFIVE/M-Hexo-Blog</a></li>
+<li><strong><em>WP-Theme-2015</em></strong> by <strong>MOxFIVE</strong> on <code>2015/08/18</code>: <a href="https://github.com/MOxFIVE/WP-Theme-2015" target="_blank" rel="external">https://github.com/MOxFIVE/WP-Theme-2015</a></li>
+<li><strong>多说评论系统</strong>: <a href="http://duoshuo.com/" target="_blank" rel="external">http://duoshuo.com/</a></li>
+<li><strong>马克飞象</strong>: <a href="http://www.maxiang.info/" target="_blank" rel="external">http://www.maxiang.info/</a></li>
+<li><strong>Mou - Markdown editor for developers</strong>: <a href="http://25.io/mou/" target="_blank" rel="external">http://25.io/mou/</a></li>
+<li><strong><em>为Hexo博客添加目录</em></strong> by <strong>况小琪不卖萌</strong> on <code>2015/02/09</code>: <a href="http://kuangqi.me/tricks/enable-table-of-contents-on-hexo/" target="_blank" rel="external">http://kuangqi.me/tricks/enable-table-of-contents-on-hexo/</a></li>
+<li><strong><em>关于点击按钮弹出DIV的相关代码</em></strong> by <strong>逍遥狂儒</strong> on <code>2013/08/02</code>: <a href="http://is.gd/bD33Ya" target="_blank" rel="external">http://is.gd/bD33Ya</a></li>
+<li><strong><em>用JavaScript实现简单的点击返回顶部效果</em></strong> by <strong>jingangel</strong> on <code>2012/03/08</code>: <a href="http://www.cnblogs.com/jingangel/archive/2012/03/08/2385939.html" target="_blank" rel="external">http://www.cnblogs.com/jingangel/archive/2012/03/08/2385939.html</a></li>
+<li><strong><em>写出好的 Commit Message</em></strong> by <strong>victor</strong> on <code>2014</code>: <a href="https://ruby-china.org/topics/15737" target="_blank" rel="external">https://ruby-china.org/topics/15737</a></li>
+<li><strong><em>Git Commit message conventions</em></strong> by <strong>AngularJS</strong> on <code>2015</code>: <a href="https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/" target="_blank" rel="external">https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/</a></li>
+<li><strong><em>Setting your email in Git</em></strong> by <strong>GitHub</strong> on <code>2015</code>: <a href="https://help.github.com/articles/setting-your-email-in-git/" target="_blank" rel="external">https://help.github.com/articles/setting-your-email-in-git/</a></li>
+<li><strong>Endnote</strong>: <a href="http://endnote.com/" target="_blank" rel="external">http://endnote.com/</a></li>
+<li><strong><em>Markdown 语法说明</em></strong> by <strong>riku</strong> on <code>2012</code>: <a href="http://wowubuntu.com/markdown/" target="_blank" rel="external">http://wowubuntu.com/markdown/</a></li>
+<li><strong><em>认识与入门 Markdown</em></strong> by <strong>Te_Lee</strong> on <code>2014/04/17</code>: <a href="http://sspai.com/25137" target="_blank" rel="external">http://sspai.com/25137</a></li>
+<li><strong><em>奇偶行显示不同样式操作，CSS3 :nth-child()伪类选择器</em></strong> by <strong>phpok</strong> on <code>2013/03/08</code>: <a href="http://blog.phpok.com/archives/202/" target="_blank" rel="external">http://blog.phpok.com/archives/202/</a></li>
+<li><strong><em>什么是HTML锚点，锚点应该如何用？</em></strong> by <strong>houniaoxiapu</strong> on <code>2014/08/23</code>: <a href="http://jingyan.baidu.com/article/8275fc86b79e6446a13cf66b.html" target="_blank" rel="external">http://jingyan.baidu.com/article/8275fc86b79e6446a13cf66b.html</a></li>
+<li><strong><em>JS点击按钮到页面最底部/返回页面顶部代码</em></strong> by <strong>科e互联</strong> on <code>2014/12/12</code>: <a href="http://www.internetke.com/tutorial/js/2014/1212/1005.html" target="_blank" rel="external">http://www.internetke.com/tutorial/js/2014/1212/1005.html</a></li>
+<li><strong><em>Hexo的私人订制</em></strong> by <strong>Sunny</strong> on <code>2014/03/07</code>: <a href="http://blog.sunnyxx.com/2014/03/07/hexo_customize/#定制代码样式" target="_blank" rel="external">http://blog.sunnyxx.com/2014/03/07/hexo_customize/#定制代码样式</a></li>
+<li><strong><em>Closing issues via commit messages</em></strong> by <strong>GitHub</strong> on <code>2015</code>: <a href="https://help.github.com/articles/closing-issues-via-commit-messages/" target="_blank" rel="external">https://help.github.com/articles/closing-issues-via-commit-messages/</a></li>
+<li><strong><em>6 Methods For Vertical Centering With CSS</em></strong> by <strong>S. Bradley</strong> on <code>2011/07/14</code>: <a href="http://vanseodesign.com/css/vertical-centering" target="_blank" rel="external">http://vanseodesign.com/css/vertical-centering</a></li>
+<li><strong><em>hexo你的博客</em></strong> by <strong>不如</strong> on <code>2013/11/22</code>: <a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">http://ibruce.info/2013/11/22/hexo-your-blog/</a></li>
+<li><strong><em>你所不知的 CSS ::before 和 ::after 伪元素用法</em></strong> by <strong>Dimpurr Cheny</strong> on <code>2013/10/18</code>: <a href="http://justcoding.iteye.com/blog/2032627" target="_blank" rel="external">http://justcoding.iteye.com/blog/2032627</a></li>
+<li><strong><em>去掉超链接或按钮点击时出现的虚线边框</em></strong> by <strong>WEB开发者</strong> on <code>2012/08/10</code>: <a href="http://www.admin10000.com/document/725.html" target="_blank" rel="external">http://www.admin10000.com/document/725.html</a></li>
+<li><strong><em>Documentation: Format</em></strong> by <strong>Moment.js</strong> on <code>2015</code>: <a href="http://momentjs.com/docs/#/displaying/format/" target="_blank" rel="external">http://momentjs.com/docs/#/displaying/format/</a></li>
+<li><strong><em>不蒜子: 搞定你的网站计数</em></strong> by <strong>不如</strong> on <code>2015/4/4</code>: <a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="external">http://ibruce.info/2015/04/04/busuanzi/</a></li>
+<li><strong>百度分享</strong>: <a href="http://share.baidu.com" target="_blank" rel="external">http://share.baidu.com</a></li>
+<li><strong>微搜索</strong>: <a href="http://tinysou.com/" target="_blank" rel="external">http://tinysou.com/</a></li>
+<li><strong>百度统计</strong>: <a href="http://tongji.baidu.com/" target="_blank" rel="external">http://tongji.baidu.com/</a></li>
+<li><strong>Swiftype</strong>: <a href="https://swiftype.com/" target="_blank" rel="external">https://swiftype.com/</a></li>
+<li><strong><em>同时将博客部署在GitHub和Gitcafe上，并通过DNSPOD分流</em></strong> by <strong>PPTing</strong> on <code>2015/02/08</code>: <a href="http://ppting.me/2015/02/08/gitcafe/" target="_blank" rel="external">http://ppting.me/2015/02/08/gitcafe/</a></li>
+<li><strong>百度站内搜索</strong>: <a href="http://zn.baidu.com" target="_blank" rel="external">http://zn.baidu.com</a></li>
+<li><strong>Gitcafe</strong>: <a href="https://gitcafe.com/" target="_blank" rel="external">https://gitcafe.com/</a></li>
+<li><strong><em>国内外各大免费搜索引擎、导航网址提交入口</em></strong> by <strong>卢松松</strong> on <code>2015/09/22</code>: <a href="http://tool.lusongsong.com/addurl.html" target="_blank" rel="external">http://tool.lusongsong.com/addurl.html</a></li>
+<li><strong>TiddlyWiki</strong>: <a href="http://tiddlywiki.com/" target="_blank" rel="external">http://tiddlywiki.com/</a></li>
+<li><strong><em>解决Hexo置顶问题</em></strong> by <strong>Netcan</strong> on <code>2015/11/22</code>: <a href="http://www.netcan666.com/2015/11/22/解决Hexo置顶问题/" target="_blank" rel="external">http://www.netcan666.com/2015/11/22/解决Hexo置顶问题/</a></li>
+<li><strong>ScrollReveal.js</strong>: <a href="https://scrollrevealjs.org/" target="_blank" rel="external">https://scrollrevealjs.org/</a></li>
+<li><strong>Animate.css</strong>: <a href="http://daneden.github.io/animate.css/" target="_blank" rel="external">http://daneden.github.io/animate.css/</a></li>
+<li><strong><em>Commit message 和 Change log 编写指南</em></strong> by <strong>阮一峰</strong> on <code>2016/1/6</code>: <a href="http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html</a></li>
+</ol>
+
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+  
+</article>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="/css/showshare.css"></head>
+    <div id="share" class="bdsharebuttonbox">
+        <button class="share-toggle-button"> <i class="share-icon fa fa-share-alt"></i>
+        </button>
+        <ul class="share-items">
+            <li class="share-item">
+                <a href="#" class="share-button fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+            </li>
+            <li class="share-item">
+                <a href="#" class="share-button fa fa-weixin" data-cmd="weixin" title="分享到微信"></a>
+            </li>
+            <li class="share-item">
+                <a href="#" class="share-button fa fa-qq" data-cmd="sqq" title="分享到QQ好友"></a>
+            </li>
+            <li class="share-item">
+                <a href="#" class="share-button fx" data-cmd="qzone" title="分享到QQ空间">Z</a>
+            </li>
+            <li class="share-item">
+                <a href="#" class="share-button fa fa-facebook" data-cmd="fbook" title="分享到Facebook"></a>
+            </li>
+            <li class="share-item">
+                <a href="#" class="share-button fa fa-twitter" data-cmd="twi" title="分享到Twitter"></a>
+            </li>
+            <li class="share-item">
+                <a href="#" class="share-button fx fa-envelope-o" data-cmd="mail" title="邮件分享"></a>
+            </li>     
+            <li class="share-item">
+                <a href="#" class="share-button fa fa-files-o" data-cmd="copy" title="复制网址"></a>
+            </li>     
+        </ul>
+    </div>
+<!--
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+            </filter>
+        </defs>
+    </svg>
+-->
+    <!-- 推荐开源CDN来选取需引用的外部JS //-->
+    <script type="text/javascript" src="http://cdn.gbtags.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/js/TweenMax.min.js"></script>
+    <script src="/js/main2.js"></script>
+    <script>
+    window._bd_share_config = {
+    common : {
+                    bdText : 'lin_sun\'s blog',
+                    //文本内容
+                    bdDesc : 'Think tall, gotta smile, and have fun!',
+                    // 描述
+                    bdUrl : 'http://lin-sun.cn/',
+                    // URL地址
+                    bdPic : 'http://lin-sun.cn/img/linsun.png'
+                    // 图片信息
+                },
+        share: [{
+            "bdSize": 24
+        }]
+    }
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+    
+</script>
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+		<div class="ds-thread" data-thread-key="blog-building/index.html" data-title="博客站点建设历程" data-url="/blog-building/index.html"></div>
+		<!-- 多说评论框 end -->
+		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+		<script type="text/javascript">
+			var duoshuoQuery = {short_name:"linsun"};
+			(function() {
+					var ds = document.createElement('script');
+					ds.type = 'text/javascript';ds.async = true;
+					ds.src = '/js/embed.js';
+					ds.charset = 'UTF-8';
+					(document.getElementsByTagName('head')[0]
+					 || document.getElementsByTagName('body')[0]).appendChild(ds);
+			})();
+		</script>
+<!-- 多说公共JS代码 end -->
+
+</div>
+
+
+    
+
+
+
+
+
+    <script>
+        
+    </script>
+
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2017 lin_sun
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="http://hexo.io/" target="_blank">midnight</a> by lin_sun
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >访客到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+
+<script type="text/javascript" src="http://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=default"></script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+    <!--<script type="text/javascript">
+      window.onload = function(){
+        document.getElementById("search_form").onclick = function search(){
+            console.log("search");
+            search();
+        }
+      }
+      function search(){
+        (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+        (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+        e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+        })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+        _st('install','A1Pz-LKMXbrzcFg2FWi6','2.0.0');
+      }
+    </script>-->
+    <script src="/js/search.js"></script>
+
+  </div>
+</body>
+</html>
