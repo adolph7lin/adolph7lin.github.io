@@ -4286,6 +4286,14 @@ pre .javascript .function {
     padding: 20px 10px;
   }
 }
+.changyan {
+  padding: 20px 40px;
+}
+@media (max-width: 767px) {
+  .changyan {
+    padding: 20px 10px;
+  }
+}
 .inner1 {
   margin: 0 40px;
 }

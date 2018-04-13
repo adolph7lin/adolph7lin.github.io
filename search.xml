@@ -4,8 +4,59 @@
   
     
     <entry>
+      <title><![CDATA[Windows10创意者更新初体验]]></title>
+      <url>/posts/other/2017-04-05-Win10-Update-1703/</url>
+      <content type="html"><![CDATA[<p>昨天微软正式发布了Windows10创意者更新，本人也第一时间更新了系统，在此就大致罗列一些新系统的变化吧。文末会附上更新获取方式。<br><a id="more"></a></p>
+<h2 id="Win10创意者更新有哪些变化"><a href="#Win10创意者更新有哪些变化" class="headerlink" title="Win10创意者更新有哪些变化"></a>Win10创意者更新有哪些变化</h2><ol>
+<li>系统时间支持农历显示。  <div align="center"><br><img src="http://lin-sun.cn/win10/1-1.png" alt="农历显示"><br></div></li>
+<li>Windows徽标右键菜单的控制面板入口被移除，命令提示行被替换为PowerShell。传统的控制面板还是能在搜索框中搜索进入的。  <div align="center"><br><img src="http://lin-sun.cn/win10/1-2.png" alt="PowerShell"><br></div></li>
+<li>增加了夜灯功能，可调色温和开启时间。  <div align="center"><br><img src="http://lin-sun.cn/win10/1-3.png" alt="夜灯"><br></div></li>
+<li>设置里增加了游戏选项，可开启游戏模式，也能方便游戏玩家录制游戏视频。  <div align="center"><br><img src="http://lin-sun.cn/win10/1-4.png" alt="游戏选项"><br></div></li>
+<li>开始菜单里的磁贴默认不显示，由用户自行固定，同时磁贴开始支持合并分组。  <div align="center"><br><img src="http://lin-sun.cn/win10/1-5.png" alt="磁贴合并分组"><br></div></li>
+<li>右下角网络图标增加了启用热点的入口，这真是方便了很多。  <div align="center"><br><img src="http://lin-sun.cn/win10/1-6.png" alt="启用热点的入口"><br></div></li>
+<li>Win32程序属性兼容性选项卡中增加了“替代高DPI缩放行为”的选项，以更好地支持高分屏。  <div align="center"><br><img src="http://lin-sun.cn/win10/1-7.png" alt="Win32程序支持高分屏"><br></div></li>
+<li>新系统增加了存储感知功能，在C盘空间不足时系统会自动清理不需要的文件。同时新系统支持改变新内容的保存位置，可以把照片，音乐，新安装的应用移动到其他盘符了。  <div align="center"><br><img src="http://lin-sun.cn/win10/1-8.png" alt="存储感知"><br></div></li>
+<li>Windows Defender开始具备完整的功能界面，没装第三方安全软件的电脑会强制启用，不然真不知道有多少人会去使用这个:)。  <div align="center"><br><img src="http://lin-sun.cn/win10/1-9.jpg" alt="Windows Defender"><br></div></li>
+<li>显示设置中增加了主题显示。  <div align="center"><br><img src="http://lin-sun.cn/win10/1-10.png" alt="主题显示"><br></div></li>
+<li>注册表支持显示路径，也可粘贴直接转到，以后改注册表就会方便很多了。  <div align="center"><br><img src="http://lin-sun.cn/win10/1-11.png" alt="注册表路径显示"><br></div>
+
+</li>
+</ol>
+<h2 id="Win10创意者更新获取方式"><a href="#Win10创意者更新获取方式" class="headerlink" title="Win10创意者更新获取方式"></a>Win10创意者更新获取方式</h2><p>Windows10创意者更新的获取方式有四种，如果网友们感兴趣可以通过以下方式更新：</p>
+<ol>
+<li>微软官方工具——Windows10易升<br><a href="https://www.microsoft.com/zh-cn/software-download/windows10" target="_blank" rel="external">微软Win10更新官方地址</a> 或<a href="http://go.microsoft.com/fwlink/?LinkID=799445" target="_blank" rel="external"> 点此直接下载</a>  <div align="center"><br><img src="http://lin-sun.cn/win10/2-1.png" alt="官网截图"><br></div></li>
+<li>Media Creation Tool<br><a href="http://go.microsoft.com/fwlink/?LinkId=691209" target="_blank" rel="external"> 点此直接下载</a></li>
+<li>原版系统镜像更新,可从<a href="http://msdn.itellyou.cn/" target="_blank" rel="external">MSDN I tell you</a>网站下载  <div align="center"><br><img src="http://lin-sun.cn/win10/2-3.png" alt="官网截图"><br></div></li>
+<li>等4月11号官方推送  <div align="center"><br><img src="http://lin-sun.cn/win10/2-4.png" alt="官网截图"><br></div>
+
+
+
+</li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[127.0.0.1 VS localhost]]></title>
+      <url>/posts/programming/2017-01-31-127.0.0.1-VS-localhost/</url>
+      <content type="html"><![CDATA[<p>码农们对127.0.0.1和localhost肯定不会陌生，在调试预览Web项目的时候肯定会用到，但是你可曾想过这两者的区别是什么？<br><a id="more"></a></p>
+<h2 id="127-0-0-1"><a href="#127-0-0-1" class="headerlink" title="127.0.0.1"></a>127.0.0.1</h2><p>在介绍127.0.0.1之前我们需要先了解一下 <code>loopback</code> 的概念。</p>
+<p>loopback 是一个特殊的网络接口(可理解成虚拟网卡)，用于本机中各个应用之间的网络交互。只要操作系统的网络组件是正常的，loopback 就能工作。Windows 中看不到这个接口，而在Unix和Linux系统中，则把loopback接口命名为lo或者lo0。</p>
+<p>IPv4的网络标准把从 127.0.0.1 到 127.255.255.254 IP地址块都用作 loopback 。所有的发到这些地址的数据包都会被完整的返还回去(looped back)，这一千六百多万个地址中，最知名的、最常用的就是 127.0.0.1 。而对于IPv6来说，它只把一个地址用作 loopback ，就是<code>::1 (0000:0000:0000:0000:0000:0000:0000:0001)</code> 。</p>
+<p>有了loopback地址，同一个计算机上的进程通信都会非常方便，根本不用走实际的物理网卡。</p>
+<p>比如说你在本机建立了一个Web服务器，然后通过浏览器用 <a href="http://127.0.0.1:8080" target="_blank" rel="external">http://127.0.0.1:8080</a> 去访问，操作系统内的网络协议栈会把这个HTTP GET请求封装到一个TCP包中，写上目的端口号8080，然后再封装到一个IP包中，写上目的地址 127.0.0.1 。但是这个IP数据包并不会发送到物理的网卡那里去，更不会通过数据链路层发送到局域网乃至互联网中，实际上它发给了虚拟的网络接口, 然后立刻被looped back到IP层的输入队列中。IP层收到数据包，交付给TCP层，TCP层发现目的端口是8080，就会把GET请求取出来，交付给绑定8080端口的Web服务器。</p>
+<h2 id="localhost"><a href="#localhost" class="headerlink" title="localhost"></a>localhost</h2><p>至于localhost，这就是个本机的主机名，在大多数机器上，这个主机名都会被计算机操作系统映射到 127.0.0.1(ipv4) 或者 ::1(ipv6) ，那么使用localhost和ip实际上一样了。</p>
+<p>以下是Windows下host文件的预定义内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># localhost name resolution is handled within DNS itself.</div><div class="line">#	127.0.0.1       localhost</div><div class="line">#	::1             localhost</div></pre></td></tr></table></figure></p>
+<p>当然你可以手工的修改hosts文件来改变这种默认映射。</p>
+<p>Windows的hosts文件位置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">%SystemRoot%\System32\drivers\etc\hosts</div></pre></td></tr></table></figure></p>
+<p>Unix、Liunx的hosts文件位置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/etc/hosts</div></pre></td></tr></table></figure></p>
+<p>有个值得一提的例外就是Mysql，在Linux上，当你使用localhost来连接数据库的时候，Mysql会使用Unix domain socket来传输数据，这种方式会快一些，因为这是一种进程内通信(IPC)机制，不走网络协议栈，不需要打包拆包，计算校验和维护序号等操作。但当你使用127.0.0.1的时候，Mysql还是会使用TCP/IP协议栈来进行数据传输。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[测试页面]]></title>
-      <url>/posts/programming/2016-10-28-Test-Page/</url>
+      <url>/posts/programming/2016-10-27-Test-Page/</url>
       <content type="html"><![CDATA[<p>测试页面对Latex公式的支持，以及实现markdown下不同代码语言的高亮功能<br><a id="more"></a></p>
 <h2 id="Start-Testing"><a href="#Start-Testing" class="headerlink" title="Start Testing"></a>Start Testing</h2><h3 id="Latex"><a href="#Latex" class="headerlink" title="Latex"></a>Latex</h3><p>Latex公式：\(ax^2 + bx + c = 0\)  \(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)<br>$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</p>
 <h3 id="Code-Hightlight"><a href="#Code-Hightlight" class="headerlink" title="Code Hightlight"></a>Code Hightlight</h3><p>gitbash:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure></p>
@@ -17,7 +68,7 @@
     
     <entry>
       <title><![CDATA[个人 Web 前端学习路线]]></title>
-      <url>/posts/programming/2016-06-20-Front-End-Study/</url>
+      <url>/posts/programming/2016-06-19-Front-End-Study/</url>
       <content type="html"><![CDATA[<p></p><h2 id="intro">前言</h2>简单记录个人学习 Web 前端过程中使用的教程和书籍。仅列出较系统和专业化的资料，不包括网上零散的文章和教程。<p></p>
 <ul>
 <li><strong>资源样式</strong>：[完成日期]. [教程标题（带链接）] <code>[投入时间]</code>；</li>
