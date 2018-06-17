@@ -62,7 +62,7 @@ require([], function (){
                 for(var i=0,len=imgArr.length;i<len;i++){
                     var src = imgArr.eq(i).attr("src");
                     var title = imgArr.eq(i).attr("alt");
-                    imgArr.eq(i).replaceWith("<a href='"+src+"' title='"+title+"' rel='fancy-group' class='fancy-ctn fancybox'><img src='"+src+"' title='"+title+"'></a>");
+                    imgArr.eq(i).replaceWith("<a href='"+src+"' title='"+title+"' rel='fancy-group' data-fancybox='images' class='fancy-ctn fancybox'><img src='"+src+"' title='"+title+"'></a>");
                 }
                 $(".article-inner .fancy-ctn").fancybox();
             }
@@ -85,7 +85,7 @@ require([], function (){
         // https://github.com/jlmakes/scrollreveal.js
         // 使用cdn[//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js]
         require([
-          '//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js'
+          '//cdn.bootcss.com/scrollReveal.js/3.4.0/scrollreveal.js'
         ], function (ScrollReveal) {
           // 更多animation:
           // http://daneden.github.io/animate.css/
